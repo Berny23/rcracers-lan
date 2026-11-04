@@ -12,7 +12,7 @@ Unofficial LAN multiplayer mod for 3D Ultra Radio Control Racers Deluxe (2000). 
 - Empty slots can be filled with computer players
 - Players who leave are taken over by the computer
 - Race options: laps or minutes, length, difficulty, power-ups, track sheriff
-- Races fill the screen, borderless window
+- Visual improvements: races fill the screen, borderless window, menu bar and tooltips are recreated faithfully
 - Settings in `scripts/rclan.ini`
 
 ## Supported versions
