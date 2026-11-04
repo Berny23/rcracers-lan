@@ -24,7 +24,7 @@ All players need the same version of the game and the mod.
 
 ## Install
 
-1. Download `rclan-lan-1.0.0.zip` from the releases.
+1. Download `rclan-1.0.0.zip` from the releases.
 2. Extract it into the game folder (the one with `RCRacers.exe`).
 3. Start the game.
 
@@ -41,7 +41,7 @@ Your firewall must allow UDP port 47624 and TCP port 47625.
 
 ```
 make            # needs mingw-w64-gcc
-make release    # build/rclan-lan-1.0.0.zip
+make release    # build/rclan-1.0.0.zip
 ```
 
 ## Note

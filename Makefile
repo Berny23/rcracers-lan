@@ -4,7 +4,7 @@
 #   make install    copy ASI loader (as winmm.dll) + plugin into the game dir
 #   make uninstall  remove everything `install` added
 #   make run        install, then launch the game via Proton (see run.sh: PROTON, PREFIX)
-#   make release    build/rclan-lan-$(VERSION).zip: unpack into the game folder
+#   make release    build/rclan-$(VERSION).zip: unpack into the game folder
 
 CXX      := i686-w64-mingw32-g++
 CXXFLAGS := -std=c++17 -O2 -Wall -Wextra -fno-exceptions -fno-rtti
@@ -66,7 +66,7 @@ install: $(ASI) $(UAL_DLL)
 
 # Release zip, laid out like the game folder: winmm.dll at the top, the rest
 # in scripts/. Rebuilt from scratch so the build stamp is current.
-RELEASE := build/rclan-lan-$(VERSION)
+RELEASE := build/rclan-$(VERSION)
 release: $(UAL_DLL)
 	$(MAKE) clean
 	$(MAKE) all
@@ -77,7 +77,7 @@ release: $(UAL_DLL)
 	sed 's/$$/\r/' dist/rclan.ini > $(RELEASE)/scripts/rclan.ini
 	install -m 644 README.md $(RELEASE)/scripts/rclan-README.md
 	install -m 644 dist/LICENSE-UltimateASILoader.txt $(RELEASE)/scripts/LICENSE-UltimateASILoader.txt
-	cd $(RELEASE) && zip -q -r -X ../rclan-lan-$(VERSION).zip winmm.dll scripts
+	cd $(RELEASE) && zip -q -r -X ../rclan-$(VERSION).zip winmm.dll scripts
 	@echo "-> $(RELEASE).zip"; unzip -l $(RELEASE).zip
 
 uninstall:
