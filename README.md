@@ -24,7 +24,7 @@ All players need the same version of the game and the mod.
 
 ## Install
 
-1. Download `rclan-1.0.0.zip` from the releases.
+1. Download [rclan-1.0.0.zip](https://github.com/Berny23/rcracers-lan/releases/download/v1.0.0/rclan-1.0.0.zip) from the releases.
 2. Extract it into the game folder (the one with `RCRacers.exe`).
 3. Start the game.
 
